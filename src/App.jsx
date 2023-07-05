@@ -1,5 +1,5 @@
-import style from './style'
-import {Nav, Hero} from './components';
+import style from '../src/style'
+import {Nav, Hero} from '../src/components';
 
 const App = () => (
     <div className={`${style.flexCenter} bg-primary w-full text-white overflow-hidden}`}>
