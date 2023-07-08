@@ -9,9 +9,7 @@ const App = () => (
             <Nav />
         </div>
 
-        <div className={`${style.paddingX} my-5 outline`}>
-            <Hero />
-        </div>
+        
 
       </div>
     </div>
