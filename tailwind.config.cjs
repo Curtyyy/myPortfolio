@@ -11,11 +11,12 @@ module.exports = {
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {
+        robotoMono: ["Roboto Mono", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
     },
     screens: {
-      xs: "380px",
+      xs: "360px",
       ss: "590px",
       sm: "768px",
       md: "1060px",

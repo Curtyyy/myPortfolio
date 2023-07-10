@@ -1,0 +1,17 @@
+@import './fonts.css';
+
+.bg-main {
+    background: linear-gradient(#0F0E2C 100%, #2A2879 100%);
+    font-family: 'Roboto Mono', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    
+}
+
+/* hero section */
+.letter-space {
+    letter-spacing: 40px;
+}
+.letter-t {
+    letter-spacing: 0;
+}
