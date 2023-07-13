@@ -1,18 +1,21 @@
-import logoSvg from '../assets/curtlogo.svg'
+import { useState } from 'react';
+import { curtlogo } from '../assets';
+import { navLinks } from '../constants';
 
 const nav = () => {
   return (
-    <nav className='flex items-center justify-between flex-wrap'> 
-      <a href="#"><img src={logoSvg} alt="myLogo" className='w-[50px] rounded-full' /></a>
-
-      <div className="flex-initial sm:w-[50%] xs:w-auto"></div>
+    <nav className='w-full sm:flex items-center justify-between navbar'> 
+      <a href="#"><img src={curtlogo} alt="myLogo" className='w-[50px] rounded-full' /></a>
       
-      <div className='xs:hidden md:block'>
-          <a className='text-white hover:text-teal-200 px-2' href="#">About</a>
-          <a className='text-white hover:text-teal-200 px-2' href="#">Skills</a>
-          <a className='text-white hover:text-teal-200 px-2' href="#">Project</a>
-          <a className='text-white hover:text-teal-200 px-2' href="#">Contact</a>
-      </div>
+      <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
+        {navLinks.map((nav, index) => (
+          <li key={nav.id} className={`font-poppins font-normal cursor-pointer text- text-white ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} hover:text-cyan-300`}>
+            <a href={`#${nav.id}`}>
+              {nav.title}
+            </a>
+          </li>
+        ))}
+      </ul>
     </nav>
   )
 }
