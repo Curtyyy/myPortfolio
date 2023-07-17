@@ -1,6 +1,6 @@
 import style from '../src/style'
 import './styles/mainStyle.css'
-import {Nav, Hero, About, DownSign} from '../src/components';
+import {Nav, Hero, About, DownSign, Skills} from '../src/components';
 
 const App = () => (
 
@@ -30,6 +30,18 @@ const App = () => (
         </div>
       </div>
       
+      <div className={`${style.flexCenter} ${style.padding}`}>
+        <div className={`${style.paddingY} ${style.boxWidth}`}>
+          <DownSign />
+        </div>
+      </div>
+
+      <div className={`${style.flexCenter} ${style.padding}`}>
+        <div className={`${style.paddingY} ${style.boxWidth}`}>
+          <Skills />
+        </div>
+      </div>
+
       <div className={`${style.flexCenter} ${style.padding}`}>
         <div className={`${style.paddingY} ${style.boxWidth}`}>
           <DownSign />

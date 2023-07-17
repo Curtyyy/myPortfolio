@@ -1,6 +1,6 @@
 import '../styles/mainStyle.css';
 //import style from '../style.js'
-import { linked, github, down } from '../assets';
+import { linked, github, } from '../assets';
 
 const hero = () => {
   return (
