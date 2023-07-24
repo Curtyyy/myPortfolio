@@ -14,6 +14,12 @@ import react from './react.svg';
 import responsiveDesign from './responsive-design.svg';
 import sass from './sass.svg';
 import terminal from './terminal.svg';
+import p1 from './p1.jpg';
+import p2 from './p2.png';
+import facebook from './facebook.svg';
+import instagram from './instagram-logo.svg';
+import twitter from './twitter.svg';
+import linked2 from './linked2.svg';
 
 export {
     curtlogo,
@@ -32,5 +38,10 @@ export {
     responsiveDesign,
     sass,
     terminal,
-    
+    p1,
+    p2,
+    facebook,
+    instagram,
+    twitter,
+    linked2,
 };
