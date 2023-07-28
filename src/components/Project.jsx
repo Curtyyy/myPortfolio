@@ -14,15 +14,15 @@ const Project = () => {
           <div className='col-span-4 p-3 relative items-center justify-center w-full h-[300px] outline'>
           <div className={`absolute bottom-0 left-0 right-0 top-0 grid place-items-center font-thin `}>Projects will show up here</div>
             {projects.map((proj, index) => (
-              <div className='absolute bottom-0 left-0 right-0 top-0 grid place-items-center'>
-                <div key={proj.id} id={proj.id} className={`flex items-top justify-center bg-primary p-10 ${toggle === index ? ' block' : ' hidden'} transition duration-300 ease-in-out`}> 
+              <div key={proj.id} className='absolute bottom-0 left-0 right-0 top-0 grid place-items-center'>
+                <div id={proj.id} className={`flex items-top justify-center bg-primary p-10 ${toggle === index ? ' block' : ' hidden'} transition duration-300 ease-in-out `}> 
                   <img src={proj.cover} alt={proj.id} className='mr-2' />
-                  <div className='w-[400px] px-2'>
+                  <div className='w-full ss:w-[400px] px-2'>
                     <h1 className='font-bold'>{proj.title}</h1>
                     <div key={proj.id} className='flex items-center justify-center gap-4 py-2'>
-                      <img src={proj.img1} alt={proj.img1} className='w-[40px]' />
-                      <img src={proj.img2} alt={proj.img2} className='w-[40px]' />
-                      <img src={proj.img3} alt={proj.img3} className='w-[40px]' />
+                      <img src={proj.img1} alt={proj.img1} className='w ss:w-[40px]' />
+                      <img src={proj.img2} alt={proj.img2} className=' ss:w-[40px]' />
+                      <img src={proj.img3} alt={proj.img3} className=' ss:w-[40px]' />
                     </div>
                     <p className='font-extralight'>{proj.content}</p>
                   </div>

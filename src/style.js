@@ -1,7 +1,7 @@
 const styles = {
     boxWidth: "xl:max-w-[1280px] w-full",
 
-    border1: "border-b-[1px] border-solid border-cyan-800",
+    border1: "border-b-[1px] border-solid border-cyan-800 py-6 ss:py-7",
 
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",

@@ -129,6 +129,6 @@ export const contacts = [
     {
         id: "linked",
         title: "Linkedin",
-        img: linked2,
+        img: linked,
     },
 ];

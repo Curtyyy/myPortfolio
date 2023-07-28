@@ -6,7 +6,7 @@ const App = () => (
 
     <div className={`bg-main w-full text-white overflow-hidden`}>
 
-      <div className={`${style.flexCenter} ${style.padding}`}>
+      <div id='home' className={`${style.flexCenter} ${style.padding}`}>
         <div className={`${style.paddingY} ${style.border1} ${style.boxWidth}`}>
           <Nav />
         </div>
@@ -24,7 +24,7 @@ const App = () => (
         </div>
       </div>
 
-      <div className={`${style.flexCenter} ${style.padding}`}>
+      <div id='about' className={`${style.flexCenter} ${style.padding}`}>
         <div className={`${style.paddingY} ${style.boxWidth}`}>
           <About/>
         </div>
@@ -36,7 +36,7 @@ const App = () => (
         </div>
       </div>
 
-      <div className={`${style.flexCenter} ${style.padding}`}>
+      <div id='skills' className={`${style.flexCenter} ${style.padding}`}>
         <div className={`${style.paddingY} ${style.boxWidth}`}>
           <Skills />
         </div>
@@ -48,7 +48,7 @@ const App = () => (
         </div>
       </div>
 
-      <div className={`${style.flexCenter} ${style.padding}`}>
+      <div id='project' className={`${style.flexCenter} ${style.padding}`}>
         <div className={`${style.paddingY} ${style.boxWidth}`}>
           <Project />
         </div>
@@ -60,12 +60,16 @@ const App = () => (
         </div>
       </div>
 
-      <div className={`${style.flexCenter} ${style.padding}`}>
+      <div id='contact' className={`${style.flexCenter} ${style.padding}`}>
         <div className={`${style.paddingY} ${style.boxWidth}`}>
           <Contact />
         </div>
       </div>
 
+      <div className={`${style.flexCenter} ${style.padding}`}>
+        <div className={`${style.paddingY} ${style.boxWidth}`}>
+        </div>
+      </div>
 
     </div>
   )

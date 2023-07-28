@@ -9,14 +9,14 @@ const Contact = () => {
         
         <div>
           <h1 className='pb-2'>Me Through</h1>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=curt.berdos@gmail.com" target='_blank' className='border-b p-1'>curt.berdos@gmail.com</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=curt.berdos@gmail.com" target='_blank' className='border-b p-1 hover:text-primary transition-all duration-300'>curt.berdos@gmail.com</a>
         </div>
 
-        <div className='flex items-center justify-center gap-5 py-6'>
+        <div className='inline-block ss:flex items-center justify-center gap-5 py-6'>
           {contacts.map((cont, index) => (
-            <a href="#" id={cont.id} key={cont.id} className='flex justify-center items-center outline'>
+            <a href="#" id={cont.id} key={cont.id} className='grid grid-rows-1 grid-flow-col outline my-3 rounded-xl hover:bg-primary transition-all duration-300'>
               <img src={cont.img} alt={cont.id} className='w-[70px] px-2' />
-              <h6>{cont.title}</h6>
+              <h6 className='row-start-1 row-end-2 w-28 flex items-center justify-left pl-2'>{cont.title}</h6>
             </a>
           ))}
         </div> 
