@@ -19,20 +19,20 @@ const nav = () => {
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
           <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-white ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} hover:text-cyan-300 transition-all`}>
-            <a href={`#${nav.id}`} className='transition-all'>
+            <a href={`#${nav.id}`} className='transition-all duration-300'>
               {nav.title}
             </a>
           </li>
         ))}
       </ul>
 
-      <div className='sm:hidden flex justify-end cursor-pointer items-center'>
+      <div className='sm:hidden flex justify-end cursor-pointer items-center transition-all duration-300'>
           <img src={toggle ? exit : menu} alt="menu" className='w-[50px] h-[50px] object-contain' onClick={() => setToggle((prev => !prev))} />
 
-          <div className={`${toggle ? 'flex' : 'hidden'} absolute top-20 p-3 right-0 min-w-full bg-primary rounded-xl xs:text-xs`}>
-            <ul className='list-none flex flex-1 justify-center items-center'>
-              {navLinks.map((nav, index) => ( <li key={nav.id} className={`font-poppins font-normal cursor-pointer text- text-white ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} hover:text-cyan-300 transition-all`}>
-              <a href={`#${nav.id}`} className='transition-all'>
+          <div className={`${toggle ? 'block' : 'hidden'} absolute top-16 right-2 my-auto p-3 bg-primary rounded-xl  xs:text-xs`}>
+            <ul className='list-none text-center grid justify-center items-center gap-y-5'>
+              {navLinks.map((nav, index) => ( <li key={nav.id} className={`font-poppins font-normal cursor-pointer text- text-white ${index === navLinks.length - 1 ? 'sm:mr-0' : 'sm:mr-10'} hover:text-cyan-300 transition-all`}>
+              <a href={`#${nav.id}`} className='transition-all duration-300'>
                 {nav.title}
               </a>
               </li> ))}
